@@ -1,5 +1,17 @@
 ﻿@charset "utf-8";
 
+@font-face {
+    font-family: Champagne;
+    src: url('cac_champagne.woff') format('woff'),
+        url('cac_champagne.tff') format('truetype')
+}
+
+@font-face {
+    font-family: DobkinPlain;
+    src: url('DobkinPlain.woff') format('woff'),
+        url('DobkinPlain.tff') format('truetype')
+}
+
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 2
@@ -12,37 +24,115 @@
    Filename: lake_styles.css
 
 */
+/* I put in the background image and made it so it would not expand and look right by increasing its size and by making it fixed. I also made all normal text black.  */
 html {
     background-image: url('https://c1.staticflickr.com/8/7280/6885760644_6d42e71076_b.jpg');
     background-repeat: no-repeat;
     background-size: 125%;
     background-attachment: fixed;
-    color: rgb(231, 231, 231);
+    color: rgb(0, 0, 0);
+    font-family: Dobkin, cursive;
 }
 
+/* I set the background color and I set the haed nav to what I wanted it to look like with the colors and the background and the different states.*/
 body {
-    background-color: rgb(236, 78, 57);
+    background-color: rgb(221, 210, 55);
 }
 
+/* nav#nav {
+    width: 70%;
+    margin: none;
+} */
 header nav a:visited,
 header nav a:link {
-    color: rgb(223, 84, 19);
-    background-color: black;
+    color: white;
+    background-color: rgb(138, 46, 46);
     text-decoration: none;
 }
 
 header nav a:hover,
 header nav a:active {
-    color: rgb(255, 0, 0);
+    color: rgba(66, 157, 209, 0.849);
     text-decoration: none;
 }
 
+/* I changed the alignment and size of h1 in the section with the id leftcol. */
 section#leftcol h1 {
     text-align: center;
-    font-size: 2em
+    font-size: 3em
 }
 
+aside a:visited,
+aside a:link {
+    text-decoration: none;
+    color: rgba(42, 93, 160, 0.795)
+}
+
+aside a:hover,
+aside a:active {
+    text-decoration: none;
+    color: white;
+}
+
+/* I changed up the footer with color, alignment,and background color. */
 footer {
     background-color: rgb(138, 46, 46);
     text-align: center;
+    color: rgb(230, 230, 230)
+}
+
+/* I changed the font of h1 and h2 tags.*/
+h1,
+h2 {
+    font-family: champagne, cursive;
+}
+
+/* I changed all lot of padding, margin, width, and height. I had to change some of the code in the other css sheet because it was interfering with my code. I also changed several background colors. I changed the line height for unordered lists and the list style type to circle instead of disc.*/
+section#leftcol p {
+    padding-left: 10px;
+}
+
+section#rightcol {
+    background-color: rgba(255, 166, 0, 0.767);
+    height: 1179px;
+}
+
+aside {
+    background-color: rgb(206, 85, 29);
+    margin: none;
+}
+
+section#rightcol nav a:visited,
+section#rightcol nav a:link {
+    text-decoration: none;
+    color: rgba(42, 93, 160, 0.795)
+}
+
+section#rightcol nav a:hover,
+section#rightcol nav a:active {
+    text-decoration: none;
+    color: white;
+}
+
+section#rightcol nav li {
+    line-height: 2em
+}
+
+ul {
+    list-style-type: circle;
+}
+
+/* I set up my blockquote size and quotation marks. */
+blockquote {
+    font-size: 1.3em;
+}
+
+blockquote::before {
+    content: open-quote;
+    font-weight: bold;
+}
+
+blockquote::after {
+    content: close-quote;
+    font-weight: bold;
 }
