@@ -31,7 +31,8 @@ html {
     background-size: 125%;
     background-attachment: fixed;
     color: rgb(0, 0, 0);
-    font-family: Dobkin, cursive;
+    font-family: champagne, cursive;
+    font-size: 1.3em;
 }
 
 /* I set the background color and I set the haed nav to what I wanted it to look like with the colors and the background and the different states.*/
@@ -84,7 +85,7 @@ footer {
 /* I changed the font of h1 and h2 tags.*/
 h1,
 h2 {
-    font-family: champagne, cursive;
+    font-family: DobkinPlain, cursive;
 }
 
 /* I changed all lot of padding, margin, width, and height. I had to change some of the code in the other css sheet because it was interfering with my code. I also changed several background colors. I changed the line height for unordered lists and the list style type to circle instead of disc.*/
@@ -94,7 +95,7 @@ section#leftcol p {
 
 section#rightcol {
     background-color: rgba(255, 166, 0, 0.767);
-    height: 1179px;
+    height: 1183px;
 }
 
 aside {
@@ -115,7 +116,7 @@ section#rightcol nav a:active {
 }
 
 section#rightcol nav li {
-    line-height: 2em
+    line-height: 1.5em
 }
 
 ul {
